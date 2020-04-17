@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from show import views
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path(r'index', views.index),  # 新增url解析规则，什么网址对应什么函数
 ]
