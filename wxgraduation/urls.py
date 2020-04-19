@@ -21,5 +21,9 @@ from show import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'index', views.index),  # 新增url解析规则，什么网址对应什么函数
-    path(r'', views.index)
+    path(r'', views.index),
+    path(r'chart', views.chart),
+    path(r'demo', views.demo),
+    path(r'datatable', views.datatable),
+    path(r'refreshMovieInfo', views.refresh_movie_info),  # 重新爬取电影信息
 ]
